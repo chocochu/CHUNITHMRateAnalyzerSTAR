@@ -885,9 +885,9 @@ function attach_view (el) {
         created: function () {
             load_data();
             this.last_rate = Object.deepcopy(this.rate);
-            if (location.href.match(/Playlog\.html/))
+            if (location.href.match(/playlog/))
                 this.scrape_target = "playlog";
-            else if (location.href.match(/MusicGenre\.html/) && $(".box01_title span").length)
+            else if (location.href.match(/musicGenre/) && $(".box01_title span").length)
                 this.scrape_target = "musicgenre";
         },
         computed: {
